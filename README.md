@@ -297,7 +297,7 @@ Visual demonstrations of the completed AI SOC Analyst Assistant.
 
 ## 🖥️ Main Dashboard
 
-![Dashboard](screenshots/dashboard.png)
+![Dashboard](screenshots/01-main-dashboard.png)
 
 The main interface allows users to ask cybersecurity questions using natural language while interacting with a locally hosted Large Language Model.
 
@@ -305,7 +305,7 @@ The main interface allows users to ask cybersecurity questions using natural lan
 
 ## 🔍 Retrieval-Augmented Generation (RAG)
 
-![RAG Response](screenshots/rag_response.png)
+![RAG Response](screenshots/03-mitre-answer.png)
 
 Every response is generated after searching the cybersecurity knowledge base, helping produce grounded, evidence-supported answers instead of relying only on the language model's memory.
 
@@ -313,7 +313,7 @@ Every response is generated after searching the cybersecurity knowledge base, he
 
 ## 🎣 Phishing Email Analysis
 
-![Phishing Analysis](screenshots/phishing_analysis.png)
+![Phishing Analysis](screenshots/02-phishing-answer.png)
 
 Analyze suspicious emails to identify indicators commonly associated with phishing attempts.
 
@@ -329,7 +329,7 @@ Examples include:
 
 ## 📚 Source Citations
 
-![Sources](screenshots/source_citations.png)
+![Sources](screenshots/04-source-citations.png)
 
 Rather than simply answering questions, the assistant displays the supporting cybersecurity documentation used to generate the response.
 
@@ -337,15 +337,23 @@ Rather than simply answering questions, the assistant displays the supporting cy
 
 ## 🧪 Automated Testing
 
-![Pytest](screenshots/pytest_results.png)
+![Pytest](screenshots/05-pytest-results.png)
 
 Automated tests help ensure the application's core functionality continues working correctly as new features are added.
 
 ---
 
+## 🗂️ Vector Store
+
+![Vector Store](screenshots/06-vector-store-files.png)
+
+The AI SOC Analyst Assistant converts cybersecurity documents into vector embeddings and stores them in a FAISS vector database. This enables fast semantic similarity searches, allowing the Retrieval-Augmented Generation (RAG) pipeline to locate the most relevant documentation before generating an evidence-based response.
+
+---
+
 ## 🤖 Ollama Running Locally
 
-![Ollama](screenshots/ollama.png)
+![Ollama](screenshots/07-ollama-models.png)
 
 The entire application runs locally using Ollama, eliminating the need for paid AI APIs.
 
