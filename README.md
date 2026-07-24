@@ -1,1856 +1,805 @@
+<div align="center">
+
 # 🛡️ AI SOC Analyst Assistant
 
-> **Capstone Project**
->
-> **Course:** Capstone Project
->
-> **Author:** Eric Sledge
->
-> **Institution:** Claflin University
->
-> **Project Type:** Retrieval-Augmented Generation (RAG) AI Assistant
->
-> **Programming Language:** Python
->
-> **Frontend:** Streamlit
->
-> **Backend:** Ollama + FAISS + Sentence Transformers
->
-> **Version:** 1.0
+### 🤖 Retrieval-Augmented Generation (RAG) Cybersecurity Assistant
+
+### Built with Python • Ollama • FAISS • Streamlit • MITRE ATT&CK • NIST • OWASP
 
 ---
 
-# 📖 Project Overview
+![Python](https://img.shields.io/badge/Python-3.13+-blue?style=for-the-badge&logo=python)
 
-The AI SOC Analyst Assistant is an intelligent cybersecurity assistant designed to help Security Operations Center (SOC) analysts retrieve accurate cybersecurity information from a locally stored knowledge base.
+![Streamlit](https://img.shields.io/badge/Streamlit-Web_App-red?style=for-the-badge&logo=streamlit)
 
-Unlike traditional chatbots that rely entirely on information learned during training, this project implements **Retrieval-Augmented Generation (RAG)**. Instead of answering from memory alone, the assistant first searches a cybersecurity knowledge base stored in a FAISS vector database, retrieves the most relevant information, and then uses a local Large Language Model (LLM) through Ollama to generate an informed response.
+![FAISS](https://img.shields.io/badge/FAISS-Vector_Search-green?style=for-the-badge)
 
-This design helps reduce hallucinations while allowing the assistant to answer questions using documentation that can be updated over time.
+![Ollama](https://img.shields.io/badge/Ollama-Local_LLM-black?style=for-the-badge)
 
-The application runs entirely on a local machine, making it suitable for environments where cloud-based AI services are not permitted due to privacy or security concerns.
+![GitHub](https://img.shields.io/badge/GitHub-Portfolio_Project-lightgrey?style=for-the-badge&logo=github)
 
----
-
-# 🎯 Project Objectives
-
-The primary objective of this project is to demonstrate how Artificial Intelligence can assist cybersecurity professionals by combining semantic search with modern Large Language Models.
-
-This capstone demonstrates the ability to:
-
-- Build a Retrieval-Augmented Generation (RAG) application
-- Process cybersecurity documentation
-- Generate vector embeddings
-- Store embeddings using FAISS
-- Retrieve relevant cybersecurity knowledge
-- Generate AI-assisted responses using Ollama
-- Display results through a professional web interface
-- Log application activity
-- Test and validate software functionality
-
-Rather than creating another chatbot, this project focuses on solving a real-world cybersecurity problem by improving information retrieval for SOC analysts.
+![License](https://img.shields.io/badge/License-Educational-blueviolet?style=for-the-badge)
 
 ---
 
-# 🚀 Key Features
+### 🧠 Local AI • 📚 RAG • 🔍 Cybersecurity Knowledge • 💻 No API Keys Required
 
-The AI SOC Analyst Assistant includes the following features:
-
-✅ Local AI using Ollama
-
-✅ Retrieval-Augmented Generation (RAG)
-
-✅ FAISS Vector Database
-
-✅ Sentence Transformer Embeddings
-
-✅ Cybersecurity Knowledge Base
-
-✅ Streamlit Web Dashboard
-
-✅ Similarity Search
-
-✅ Source Citation Display
-
-✅ Retrieved Context Viewer
-
-✅ Query Response Timing
-
-✅ JSONL Query Logging
-
-✅ Automated Testing
-
-✅ Modular Python Architecture
+</div>
 
 ---
 
-# 🛠️ Technologies Used
+# 📖 Table of Contents
 
-| Technology | Purpose |
-|------------|---------|
-| Python | Primary programming language |
-| Streamlit | Web application frontend |
-| Ollama | Local Large Language Model runtime |
-| Llama 3.2 | AI language model |
-| FAISS | Vector similarity search |
-| Sentence Transformers | Text embeddings |
-| Hugging Face | Embedding models |
-| PyTorch | Machine learning framework |
-| NumPy | Numerical processing |
-| JSON | Metadata and logging |
-| dotenv | Environment variable management |
-| PyTest | Regression testing |
+- 🎯 Project Overview
+- 🚀 Why This Project?
+- ✨ Features
+- 🛠 Technology Stack
+- 🧠 What is Retrieval-Augmented Generation (RAG)?
+- 🏗 Project Architecture
+- 📂 Repository Structure
+- 📘 Complete Beginner Documentation
+- 📸 Project Screenshots
+- 🎓 Learning Outcomes
+- 💼 Skills Demonstrated
+- 🚀 Future Improvements
+- 👨‍💻 Author
 
 ---
 
-# 🏗️ System Architecture
+# 🎯 Project Overview
 
-The application follows a modular architecture.
+The **AI SOC Analyst Assistant** is a fully local Retrieval-Augmented Generation (RAG) application designed to assist Security Operations Center (SOC) analysts with cybersecurity investigations.
 
+Instead of relying only on a Large Language Model (LLM), this application retrieves relevant cybersecurity documentation before generating a response. This approach significantly improves answer quality, reduces hallucinations, and provides traceable citations.
+
+The project combines modern Artificial Intelligence with trusted cybersecurity frameworks to produce grounded responses based on real documentation.
+
+Everything runs locally on your own computer using Ollama.
+
+✅ No OpenAI API
+
+✅ No monthly subscription
+
+✅ No internet connection required after setup
+
+---
+
+# 🚀 Why This Project?
+
+Large Language Models are incredibly powerful—but they also have limitations.
+
+Traditional AI assistants can:
+
+❌ Hallucinate
+
+❌ Invent cybersecurity facts
+
+❌ Misquote frameworks
+
+❌ Forget important details
+
+❌ Produce answers without evidence
+
+Retrieval-Augmented Generation (RAG) solves these problems by allowing the AI to search trusted cybersecurity documents before answering.
+
+This project demonstrates how modern AI systems can be combined with trusted knowledge sources to produce more accurate and transparent results.
+
+---
+
+# ✨ Features
+
+## 🤖 Artificial Intelligence
+
+- Local LLM using Ollama
+- Llama 3.2 integration
+- Retrieval-Augmented Generation (RAG)
+- Context-aware prompting
+- Citation-supported answers
+
+---
+
+## 📚 Knowledge Base
+
+The assistant searches documents from:
+
+- 🛡 MITRE ATT&CK
+- 🏛 NIST Cybersecurity Framework
+- 🔐 NIST Password Guidelines
+- 🌐 OWASP
+- 🎣 CISA Phishing Guidance
+- 📄 Incident Response Playbooks
+
+---
+
+## 🔍 Cybersecurity Features
+
+- IOC Extraction
+- Threat Intelligence Lookup
+- Incident Response Assistance
+- MITRE ATT&CK Explanations
+- Phishing Detection
+- Password Security Guidance
+- Authentication Best Practices
+- Logging Recommendations
+- SQL Injection Guidance
+- XSS Prevention Guidance
+
+---
+
+## 💻 Software Features
+
+- Streamlit Web Interface
+- Modular Backend
+- PDF Document Loading
+- Automatic Text Chunking
+- Embedding Generation
+- FAISS Vector Database
+- Semantic Search
+- Automated Testing
+- Git Version Control
+- Complete Documentation
+
+---
+
+# 🛠 Technology Stack
+
+| Category | Technology |
+|-----------|------------|
+| Programming Language | Python |
+| Artificial Intelligence | Ollama |
+| Large Language Model | Llama 3.2 |
+| Retrieval System | RAG |
+| Embeddings | Sentence Transformers |
+| Vector Database | FAISS |
+| Frontend | Streamlit |
+| PDF Processing | PyMuPDF |
+| Testing | Pytest |
+| Version Control | Git |
+| Repository Hosting | GitHub |
+| IDE | Visual Studio Code |
+
+---
+
+# 🧠 What is Retrieval-Augmented Generation (RAG)?
+
+Retrieval-Augmented Generation (RAG) is an AI architecture that combines document retrieval with language generation.
+
+Instead of answering solely from the model's internal knowledge, the assistant first searches a trusted knowledge base, retrieves the most relevant information, and then uses that information to generate an evidence-based response.
+
+This project uses RAG to reduce hallucinations and provide cybersecurity answers grounded in trusted documentation.
+
+---
+
+# 🏗 Project Architecture
+
+```text
+                   User Question
+                         │
+                         ▼
+              Streamlit Web Interface
+                         │
+                         ▼
+                  RAG Processing Engine
+                         │
+          ┌──────────────┴──────────────┐
+          ▼                             ▼
+   FAISS Vector Search           Ollama (Llama 3.2)
+          │                             │
+          ▼                             ▼
+ Cybersecurity Documents         AI Response Generation
+          │                             │
+          └──────────────┬──────────────┘
+                         ▼
+              Citation Supported Answer
 ```
-                    User
-
-                      │
-
-                      ▼
-
-             Streamlit Dashboard
-
-                      │
-
-                      ▼
-
-               User Question
-
-                      │
-
-                      ▼
-
-                RAG Engine
-
-          ┌───────────┴───────────┐
-          │                       │
-          ▼                       ▼
-
-    FAISS Vector DB         Ollama LLM
-
-          │                       ▲
-          │                       │
-          └──── Retrieved Context ┘
-
-                      │
-
-                      ▼
-
-             Generated Response
-
-                      │
-
-                      ▼
-
-              Streamlit Interface
-
-                      │
-
-                      ▼
-
-              Query Logging (JSONL)
-```
-
-Each component has a single responsibility, making the project easier to maintain, debug, and expand.
 
 ---
 
-# 📂 Project Structure
+# 📂 Repository Structure
 
-```
+```text
 AI-SOC-Assistant/
-
 │
 ├── backend/
-│   ├── chunker.py
-│   ├── embeddings.py
-│   ├── faiss_store.py
-│   ├── rag_engine.py
-│   └── ...
-│
-├── docs/
-│   ├── architecture.md
-│   ├── installation.md
-│   ├── testing.md
-│   ├── limitations.md
-│   └── user_guide.md
-│
-├── evaluation/
-│   └── soc_questions.json
 │
 ├── frontend/
-│   └── streamlit_app.py
 │
 ├── knowledge_base/
 │   ├── documents/
 │   └── indexes/
 │
-├── logs/
-│   └── rag_queries.jsonl
-│
 ├── tests/
 │
-├── .env
+├── docs/
+│
+├── screenshots/
+│
+├── evaluation/
+│
+├── data/
+│
+├── app.py
+├── dashboard.py
 ├── requirements.txt
 ├── README.md
-└── ...
+└── .gitignore
 ```
 
 ---
 
-# 💡 Why Retrieval-Augmented Generation (RAG)?
+# 🌟 What Makes This Project Different?
 
-Large Language Models are extremely powerful but have one major limitation:
+Unlike many AI chatbot projects, this application focuses on **grounded cybersecurity assistance** rather than general conversation.
 
-They only know what they learned during training.
+The assistant retrieves relevant documentation before generating a response, allowing users to verify where information came from.
 
-If cybersecurity guidance changes, a normal chatbot cannot automatically learn those updates.
-
-Retrieval-Augmented Generation solves this problem by allowing the model to retrieve information from external documents before generating an answer.
-
-Instead of relying solely on memory, the workflow becomes:
-
-```
-User Question
-
-↓
-
-Search FAISS
-
-↓
-
-Retrieve Relevant Documents
-
-↓
-
-Provide Context to LLM
-
-↓
-
-Generate Accurate Answer
-```
-
-This significantly improves factual accuracy while reducing hallucinations.
+This creates a more transparent and trustworthy workflow for cybersecurity education, investigation, and analysis.
 
 ---
 
-# 🎓 Skills Demonstrated
+# 📘 Complete Beginner Documentation
 
-This project demonstrates practical experience with:
+One of the primary goals of this repository is education.
 
-- Artificial Intelligence
-- Retrieval-Augmented Generation
-- Vector Databases
-- Semantic Search
-- Python Software Development
-- Cybersecurity Knowledge Management
-- Local Large Language Models
-- Prompt Engineering
-- Software Testing
-- Logging and Monitoring
-- Application Documentation
-- Modular Software Design
+This project includes a complete beginner-friendly guide that teaches readers how to recreate the entire application from scratch.
 
-These are highly transferable skills applicable to cybersecurity, AI engineering, software development, and machine learning roles.
-
----
-
-# 🖥️ Software Requirements
-
-The project was developed using:
-
-- Windows Server 2025
-- Python 3.13+
-- Visual Studio Code
-- Ollama
-- Git (optional until deployment)
-- PowerShell
-- Streamlit
-
-The project can also run on Windows 11 with minimal modifications.
-
----
-
-# 💻 Hardware Requirements
-
-Minimum Recommended Hardware
-
-| Component | Recommendation |
-|------------|---------------|
-| CPU | Quad-Core Processor |
-| RAM | 16 GB |
-| Storage | 20 GB Free |
-| GPU | Optional |
-| Internet | Required for initial model downloads |
-
-After all models are downloaded, the assistant operates completely offline.
-
----
-
-# 📌 Before You Begin
-
-Before attempting to recreate this project, make sure you have:
-
-- Basic Python knowledge
-- Administrator access to your computer
-- PowerShell
-- Visual Studio Code installed
-- Python installed
-- Ollama installed
-- An internet connection for downloading dependencies
-
-Although this README is written for beginners, having a basic understanding of Python will make the setup process easier.
-
----
-
-# 📈 What You'll Learn
-
-By completing this project, you will gain hands-on experience with:
-
-- Building a real Retrieval-Augmented Generation application
-- Creating a semantic search pipeline
-- Working with vector databases
-- Running local AI models
-- Building interactive Python dashboards
-- Logging AI activity
-- Writing maintainable Python code
-- Testing AI applications
-- Troubleshooting machine learning software
-- Deploying a professional capstone project
-
-This project combines cybersecurity, artificial intelligence, software engineering, and data processing into one complete application.
-
----
-
-# ⚙️ Installation and Environment Setup
-
-This section walks through the complete installation process required to build and run the AI SOC Analyst Assistant. Every major dependency is explained, along with why it is needed.
-
----
-
-# 📋 Step 1 – Install Python
-
-Python is the primary programming language used throughout this project. All backend logic, vector processing, AI integration, testing, and the Streamlit dashboard are written in Python.
-
-Download the latest stable version from:
-
-https://www.python.org/downloads/
-
-During installation:
-
-✅ Check **"Add Python to PATH"**
-
-This option allows Python to be executed from PowerShell or the Windows Command Prompt.
-
-Verify the installation by opening PowerShell and running:
-
-```powershell
-python --version
-```
-
-Example:
-
-```
-Python 3.13.5
-```
-
-If Python is not recognized, restart your computer or reinstall Python while enabling **Add Python to PATH**.
-
----
-
-# 📋 Step 2 – Install Visual Studio Code
-
-Visual Studio Code (VS Code) was used as the Integrated Development Environment (IDE) for this project.
-
-Download:
-
-https://code.visualstudio.com/
-
-Recommended Extensions:
+The documentation assumes **no previous experience** with:
 
 - Python
-- Pylance
-- Black Formatter
-- Markdown All in One
-- GitLens (optional)
+- Git
+- GitHub
+- Artificial Intelligence
+- Retrieval-Augmented Generation
+- Streamlit
+- FAISS
+- Ollama
+- Cybersecurity
 
-These extensions improve syntax highlighting, IntelliSense, debugging, formatting, and documentation editing.
+Each guide walks through every step in detail, from installing software to building every module and deploying the finished project.
 
----
+The documentation is divided into four parts:
 
-# 📋 Step 3 – Install Ollama
+## 📘 Complete Beginner Documentation
 
-Ollama allows Large Language Models to run completely on your local computer.
+This repository includes a complete beginner-friendly guide that teaches readers how to recreate this project from start to finish.
 
-Unlike cloud AI providers, Ollama keeps all processing local, making it suitable for environments where sensitive information cannot leave the organization.
+### Documentation
 
-Download:
+📘 [Part A – Install and Run the Finished Project](docs/Part-A-Install-and-Run.md)
 
-https://ollama.com/
+📘 [Part B – Build the Entire Project from Scratch](docs/Part-B-Build-From-Scratch.md)
 
-Verify installation:
+📘 [Part C – Testing and Validation](docs/Part-C-Testing-and-Validation.md)
 
-```powershell
-ollama --version
-```
-
----
-
-# 📋 Step 4 – Download the AI Model
-
-This project uses **Llama 3.2** through Ollama.
-
-Download the model:
-
-```powershell
-ollama pull llama3.2:3b
-```
-
-This downloads the language model to your computer.
-
-Verify:
-
-```powershell
-ollama list
-```
-
-Example:
-
-```
-NAME
-
-llama3.2:3b
-```
+📘 [Part D – GitHub Deployment, Troubleshooting, and Final Submission](docs/Part-D-GitHub-Deployment-and-Troubleshooting.md)
 
 ---
 
-# 📋 Step 5 – Create the Project Folder
-
-Create the project folder.
-
-Example:
-
-```
-C:\Capstone\Projects\AI-SOC-Assistant
-```
-
-The project structure should resemble:
-
-```
-AI-SOC-Assistant
-│
-├── backend
-├── frontend
-├── docs
-├── tests
-├── logs
-├── evaluation
-├── knowledge_base
-│
-└── README.md
-```
-
-Keeping the project organized from the beginning makes future maintenance significantly easier.
-
----
-
-# 📋 Step 6 – Create a Python Virtual Environment
-
-A virtual environment isolates project dependencies from the rest of the computer.
-
-Create it:
-
-```powershell
-python -m venv venv
-```
-
-Activate it:
-
-PowerShell:
-
-```powershell
-.\venv\Scripts\Activate.ps1
-```
-
-Command Prompt:
-
-```cmd
-venv\Scripts\activate
-```
-
-Once activated, your terminal should display:
-
-```
-(venv)
-```
-
-This indicates all Python packages will be installed only for this project.
-
----
-
-# 📋 Step 7 – Install Project Dependencies
-
-Install all required packages:
-
-```powershell
-pip install -r requirements.txt
-```
-
-Typical packages include:
-
-- streamlit
-- faiss-cpu
-- sentence-transformers
-- torch
-- transformers
-- python-dotenv
-- numpy
-- pytest
-
-Verify:
-
-```powershell
-pip list
-```
-
----
-
-# 📋 Step 8 – Configure Environment Variables
-
-Create a file named:
-
-```
-.env
-```
-
-Example:
-
-```env
-OLLAMA_MODEL=llama3.2:3b
-OLLAMA_BASE_URL=http://localhost:11434
-
-EMBEDDING_MODEL=sentence-transformers/all-MiniLM-L6-v2
-
-RAG_TOP_K=5
-RAG_MINIMUM_SCORE=0.30
-RAG_MAX_CONTEXT_CHARACTERS=6000
-```
-
-Environment variables separate configuration from application code, making updates easier without modifying Python files.
-
----
-
-# 📋 Step 9 – Prepare the Knowledge Base
-
-The AI assistant does not answer questions using the internet.
-
-Instead, it searches a local cybersecurity knowledge base.
-
-Example directory:
-
-```
-knowledge_base/
-
-    documents/
-
-        phishing.pdf
-
-        nist_ir.pdf
-
-        mitre_attack.pdf
-
-        malware.pdf
-
-        windows_security.pdf
-```
-
-These documents are processed into searchable vector embeddings.
-
----
-
-# 📋 Step 10 – Document Chunking
-
-Large Language Models perform better when documents are divided into smaller sections.
-
-Instead of embedding an entire PDF, the project splits each document into manageable chunks.
-
-Example:
-
-```
-Original PDF
-
-↓
-
-100 pages
-
-↓
-
-Chunking
-
-↓
-
-300 text chunks
-
-↓
-
-Embedding
-
-↓
-
-Vector Database
-```
-
-Chunking improves retrieval speed and answer quality.
-
----
-
-# 📋 Step 11 – Generate Embeddings
-
-Each chunk is converted into a numerical representation called an embedding.
-
-The embedding model used is:
-
-```
-sentence-transformers/all-MiniLM-L6-v2
-```
-
-Embeddings allow semantic searching.
-
-Instead of matching exact words, the system searches based on meaning.
-
-Example:
-
-User asks:
-
-```
-How can phishing emails be detected?
-```
-
-The system can still retrieve a document discussing:
-
-```
-Recognizing malicious emails
-```
-
-even if the wording differs.
-
----
-
-# 📋 Step 12 – Build the FAISS Index
-
-After embeddings are generated, they are stored inside a FAISS vector database.
-
-FAISS provides extremely fast similarity search.
-
-The generated files include:
-
-```
-knowledge_base/
-
-    indexes/
-
-        soc_knowledge.faiss
-
-        soc_knowledge_metadata.json
-```
-
-The FAISS index stores vectors.
-
-The metadata file stores information about each vector, including document names and chunk locations.
-
----
-
-# 📋 Step 13 – Understanding the RAG Pipeline
-
-The application follows this workflow:
-
-```
-User asks a question
-
-↓
-
-Question converted into an embedding
-
-↓
-
-FAISS searches similar vectors
-
-↓
-
-Relevant chunks returned
-
-↓
-
-Chunks inserted into prompt
-
-↓
-
-Ollama generates response
-
-↓
-
-Answer displayed
-
-↓
-
-Query logged
-```
-
-This process happens in only a few seconds.
-
----
-
-# 📋 Step 14 – Streamlit Dashboard
-
-The frontend was developed using Streamlit.
-
-Launch:
-
-```powershell
-streamlit run frontend\streamlit_app.py
-```
-
-The dashboard provides:
-
-- Chat interface
-- Source document display
-- Retrieved context viewer
-- Response timing
-- Adjustable retrieval settings
-- Conversation history
-- Error handling
-
-Everything runs locally inside your web browser.
-
----
-
-# ⚠️ Common Installation Problems
-
-Building AI software involves many dependencies. During development, several common issues were encountered.
-
-### Python not recognized
-
-Cause:
-
-Python was not added to PATH.
-
-Solution:
-
-Reinstall Python with **Add Python to PATH** enabled.
-
----
-
-### Ollama connection failed
-
-Cause:
-
-The Ollama server was not running.
-
-Solution:
-
-Start Ollama before launching Streamlit.
-
----
-
-### FAISS index missing
-
-Cause:
-
-The vector database had not been generated.
-
-Solution:
-
-Rebuild the knowledge base and verify the following files exist:
-
-```
-soc_knowledge.faiss
-
-soc_knowledge_metadata.json
-```
-
----
-
-### Embedding model download warning
-
-The first execution downloads the embedding model.
-
-This is expected.
-
-Future executions load the cached version.
-
----
-
-### HF_TOKEN warning
-
-You may see:
-
-```
-Warning: unauthenticated requests to Hugging Face
-```
-
-This warning does not prevent the application from functioning.
-
-The model will still download successfully.
-
----
-
-### Streamlit File Watcher Warning
-
-Some versions of Streamlit attempt to inspect deep learning libraries and may produce warnings related to `torchvision`.
-
-If this occurs, disable the file watcher in:
-
-```
-.streamlit/config.toml
-```
-
-Example:
-
-```toml
-[server]
-fileWatcherType = "none"
-```
-
----
-
-# 🎉 Installation Complete
-
-If every step above has been completed successfully, you should now have:
-
-- Python installed
-- VS Code configured
-- Ollama running
-- Llama 3.2 downloaded
-- Virtual environment configured
-- Project dependencies installed
-- Knowledge base prepared
-- FAISS vector database created
-- Streamlit dashboard operational
-
-At this point, the AI SOC Analyst Assistant is ready to answer cybersecurity questions using Retrieval-Augmented Generation (RAG).
-
----
-
-# 🧠 How the AI SOC Analyst Assistant Works
-
-Understanding how the application works is just as important as knowing how to install it. This section explains the internal workflow of the project from the moment a user enters a question until an answer is displayed.
-
-The application follows a Retrieval-Augmented Generation (RAG) architecture, combining semantic search with a locally hosted Large Language Model (LLM).
-
----
-
-# 🔄 End-to-End Workflow
-
-Every question follows the same sequence of events:
-
-```
-User enters a question
-
-        │
-
-        ▼
-
-Streamlit receives the request
-
-        │
-
-        ▼
-
-Question sent to the RAG Engine
-
-        │
-
-        ▼
-
-Question converted into an embedding
-
-        │
-
-        ▼
-
-FAISS searches the vector database
-
-        │
-
-        ▼
-
-Most relevant document chunks returned
-
-        │
-
-        ▼
-
-Context sent to Ollama
-
-        │
-
-        ▼
-
-Large Language Model generates answer
-
-        │
-
-        ▼
-
-Answer returned to Streamlit
-
-        │
-
-        ▼
-
-Sources displayed
-
-        │
-
-        ▼
-
-Query written to JSONL log
-```
-
-Although this looks like a large process, it typically completes within only a few seconds.
-
----
-
-# 📁 Backend Overview
-
-The backend contains the application's core logic.
-
-```
-backend/
-
-    chunker.py
-
-    embeddings.py
-
-    faiss_store.py
-
-    rag_engine.py
-
-    ...
-```
-
-Each module has one responsibility.
-
-Following the Single Responsibility Principle makes the project easier to debug, extend, and maintain.
-
----
-
-# ✂️ chunker.py
-
-Purpose:
-
-Split large cybersecurity documents into smaller pieces before embedding.
-
-Why?
-
-Embedding an entire PDF produces poor search results.
-
-Smaller chunks provide much better retrieval accuracy.
-
-Example:
-
-```
-300-page document
-
-↓
-
-Split into
-
-↓
-
-600 chunks
-
-↓
-
-Each chunk embedded separately
-```
-
-Advantages:
-
-- Better retrieval accuracy
-- Faster searches
-- Lower memory usage
-
----
-
-# 🧠 embeddings.py
-
-Purpose:
-
-Convert text into vector embeddings.
-
-This project uses:
-
-```
-sentence-transformers/all-MiniLM-L6-v2
-```
-
-Instead of storing words, the embedding model stores numerical representations describing the meaning of the text.
-
-Example:
-
-```
-Password Attack
-
-↓
-
-[0.2184,
-0.8392,
--0.4118,
-...]
-
-384 dimensions
-```
-
-Embeddings allow the application to understand semantic meaning rather than relying on exact keyword matching.
-
----
-
-# 🗄️ faiss_store.py
-
-Purpose:
-
-Store vector embeddings and perform similarity searches.
-
-Responsibilities include:
-
-- Creating the FAISS index
-- Loading the index
-- Searching the index
-- Returning nearest neighbors
-
-FAISS was selected because it provides extremely fast nearest-neighbor searches while remaining lightweight and efficient.
-
----
-
-# 🤖 rag_engine.py
-
-Purpose:
-
-Coordinate the entire Retrieval-Augmented Generation workflow.
-
-Responsibilities include:
-
-- Receiving user questions
-- Embedding questions
-- Searching FAISS
-- Filtering results
-- Building prompts
-- Calling Ollama
-- Returning responses
-
-The RAG Engine acts as the "brain" of the application.
-
-Without it, the individual components would not communicate with one another.
-
----
-
-# 🖥️ Frontend Overview
-
-The user interface is implemented using Streamlit.
-
-Main file:
-
-```
-frontend/
-
-    streamlit_app.py
-```
-
-Responsibilities:
-
-- Display chat interface
-- Receive questions
-- Display answers
-- Show retrieved sources
-- Display retrieved chunks
-- Measure response time
-- Log completed requests
-- Handle errors
-
----
-
-# 💬 Asking a Question
-
-When a user types:
-
-```
-What is phishing?
-```
-
-the application performs the following steps:
-
-1. The question is sent to the backend.
-
-2. The backend converts the question into an embedding.
-
-3. FAISS searches for similar document chunks.
-
-4. The best matching chunks are returned.
-
-5. Those chunks become context for Ollama.
-
-6. Ollama generates a grounded answer.
-
-7. Streamlit displays:
-
-- Answer
-- Sources
-- Response time
-- Retrieved context (optional)
-
----
-
-# 📖 Source Display
-
-Every generated response includes the documents that were used.
-
-Example:
-
-```
-Sources
-
-• phishing.pdf
-
-• cisa_email_security.pdf
-
-• nist_ir.pdf
-```
-
-Displaying sources improves transparency and allows users to verify where the information originated.
-
----
-
-# 📚 Retrieved Context Viewer
-
-The application can optionally display the exact document chunks retrieved from FAISS.
-
-This feature is useful for:
-
-- Debugging
-- Validation
-- Demonstrations
-- Understanding retrieval quality
-
-Each chunk displays:
-
-- Source document
-- Similarity score
-- Retrieved text
-
----
-
-# ⏱️ Response Timing
-
-Each request measures total execution time.
-
-Example:
-
-```
-Total Response Time
-
-2.84 seconds
-```
-
-This metric includes:
-
-- Retrieval time
-- Prompt generation
-- Ollama inference
-- Total processing time
-
-Performance metrics help identify bottlenecks during development.
-
----
-
-# 📝 Automatic Query Logging
-
-Every successful and failed request is automatically recorded.
-
-Log file:
-
-```
-logs/
-
-    rag_queries.jsonl
-```
-
-Each line contains one JSON object.
-
-Example:
-
-```json
-{
-  "timestamp": "2026-07-24T12:15:33",
-  "question": "What is phishing?",
-  "model": "llama3.2:3b",
-  "top_k": 5,
-  "retrieved_chunks": 5,
-  "sources": [
-      "phishing.pdf"
-  ],
-  "answer_length": 725,
-  "total_seconds": 2.87,
-  "status": "success"
-}
-```
-
-The logging system allows future developers to:
-
-- Measure performance
-- Analyze usage
-- Detect failures
-- Audit AI interactions
-- Troubleshoot issues
-
----
-
-# 📊 Evaluation Dataset
-
-Evaluation questions are stored inside:
-
-```
-evaluation/
-
-    soc_questions.json
-```
-
-These questions provide a repeatable way to validate retrieval quality.
-
-Example categories include:
-
-- Phishing
-- Malware
-- Incident Response
-- Authentication
-- Windows Security
-- MITRE ATT&CK
-- OWASP
-
-Using a consistent evaluation dataset makes it easier to compare future improvements.
-
----
-
-# 🧪 Testing
-
-Testing ensures new changes do not break existing functionality.
-
-Run all tests:
-
-```powershell
-python -m pytest -v
-```
-
-Expected output:
-
-```
-3 passed
-```
-
-Testing should be performed after:
-
-- Adding new features
-- Refactoring code
-- Updating dependencies
-- Modifying the RAG pipeline
-
-Regression testing improves software reliability.
+## ⏭ Continue Reading...
+
+The next section of this README includes:
+
+- 📸 Project Screenshots
+- 🎓 Learning Outcomes
+- 💼 Skills Demonstrated
+- 🚀 Future Improvements
+- 👨‍💻 Author Information
 
 ---
 
 # 📸 Project Screenshots
 
-Document screenshots are valuable for demonstrating project progress.
+Visual demonstrations of the completed AI SOC Analyst Assistant.
 
-Recommended screenshots include:
-
-1. Project Folder Structure
-
-2. Streamlit Dashboard
-
-3. Successful AI Response
-
-4. Displayed Sources
-
-5. Retrieved Context
-
-6. FAISS Index Files
-
-7. JSONL Query Log
-
-8. Passing PyTest Results
-
-9. Architecture Diagram
-
-10. Application Running in Browser
-
-These screenshots can be placed inside a `screenshots` directory and referenced throughout the README.
+> **Note:** If the screenshots below do not appear on GitHub, verify they are located inside the `screenshots/` folder using the same filenames.
 
 ---
 
-# 🔒 Security Considerations
+## 🖥️ Main Dashboard
 
-Although this application runs locally, several security considerations should be kept in mind.
+![Dashboard](screenshots/dashboard.png)
 
-### Local AI
-
-Using Ollama ensures that prompts remain on the local machine.
-
-No user questions are sent to external AI providers.
+The main interface allows users to ask cybersecurity questions using natural language while interacting with a locally hosted Large Language Model.
 
 ---
 
-### Knowledge Base
+## 🔍 Retrieval-Augmented Generation (RAG)
 
-Only trusted cybersecurity documents should be added to the knowledge base.
+![RAG Response](screenshots/rag_response.png)
 
-Inaccurate or malicious documents could negatively affect retrieval quality.
-
----
-
-### Query Logs
-
-The application records user questions.
-
-Production environments should consider:
-
-- Encryption
-- Access controls
-- Log rotation
-- Retention policies
+Every response is generated after searching the cybersecurity knowledge base, helping produce grounded, evidence-supported answers instead of relying only on the language model's memory.
 
 ---
 
-### Environment Variables
+## 🎣 Phishing Email Analysis
 
-Configuration values should be stored inside `.env` files.
+![Phishing Analysis](screenshots/phishing_analysis.png)
 
-Avoid hardcoding:
+Analyze suspicious emails to identify indicators commonly associated with phishing attempts.
 
-- URLs
-- API keys
-- Sensitive configuration
+Examples include:
 
----
-
-# 🚀 Performance Considerations
-
-The following factors influence performance:
-
-- CPU speed
-- Available RAM
-- Embedding model
-- Ollama model size
-- Number of indexed documents
-- Chunk size
-- Top-K retrieval value
-
-Reducing `top_k` generally improves response speed, while increasing it may improve answer quality.
-
-Finding the right balance depends on the deployment environment.
+- Suspicious URLs
+- Urgent language
+- Credential harvesting
+- Sender impersonation
+- Social engineering tactics
 
 ---
 
-# 💡 Lessons Learned
+## 📚 Source Citations
 
-Building this project provided experience in several areas beyond Python programming.
+![Sources](screenshots/source_citations.png)
 
-Some of the most valuable lessons included:
-
-- AI applications require strong software engineering practices.
-- Good document quality produces better AI responses.
-- Logging is essential for troubleshooting.
-- Testing should be performed after every major change.
-- Modular code is easier to maintain than large monolithic scripts.
-- Retrieval quality often matters more than model size.
-- Clear documentation greatly improves maintainability.
-
-Developing this application required integrating artificial intelligence, cybersecurity, software engineering, and data processing into one cohesive solution.
+Rather than simply answering questions, the assistant displays the supporting cybersecurity documentation used to generate the response.
 
 ---
 
-# 📅 Project Development Timeline
+## 🧪 Automated Testing
 
-This project was developed over a fourteen-week capstone schedule. Each phase introduced new functionality while building upon the previous week's work.
+![Pytest](screenshots/pytest_results.png)
 
-## Week 1 – Project Planning
-
-### Objectives
-
-- Select a capstone topic
-- Research Retrieval-Augmented Generation (RAG)
-- Define project goals
-- Identify required software
-
-### Deliverables
-
-- Project proposal
-- Initial architecture planning
-- Technology selection
+Automated tests help ensure the application's core functionality continues working correctly as new features are added.
 
 ---
 
-## Week 2 – Environment Setup
+## 🤖 Ollama Running Locally
 
-### Objectives
+![Ollama](screenshots/ollama.png)
 
-- Install Python
-- Install Visual Studio Code
-- Install Ollama
-- Create project structure
-- Configure virtual environment
-
-### Deliverables
-
-- Working development environment
-- Initial project folders
+The entire application runs locally using Ollama, eliminating the need for paid AI APIs.
 
 ---
 
-## Week 3 – Knowledge Base Processing
+# 🔄 How the Application Works
 
-### Objectives
+The following diagram illustrates the complete workflow from a user's question to the final AI-generated response.
 
-- Import cybersecurity documents
-- Read PDF and text files
-- Clean extracted text
-- Prepare documents for chunking
+```text
+                 👤 User
 
-### Deliverables
+                   │
+                   ▼
 
-- Functional document loader
+        💻 Streamlit Web Interface
 
----
+                   │
+                   ▼
 
-## Week 4 – Document Chunking
+         🧠 RAG Processing Engine
 
-### Objectives
+        ┌──────────────┬──────────────┐
+        ▼                              ▼
 
-- Split documents into smaller chunks
-- Preserve metadata
-- Optimize chunk sizes
+📚 Search FAISS Index          🤖 Ollama (Llama 3.2)
 
-### Deliverables
+        │                              │
 
-- Reliable chunking pipeline
+        ▼                              ▼
 
----
+Retrieve Relevant         Generate AI Response
+Cybersecurity Chunks
 
-## Week 5 – Embeddings
+        └──────────────┬──────────────┘
 
-### Objectives
+                       ▼
 
-- Generate vector embeddings
-- Evaluate embedding quality
-- Integrate Sentence Transformers
+       📄 Citation Supported Response
 
-### Deliverables
+                       ▼
 
-- Semantic document representations
-
----
-
-## Week 6 – FAISS Vector Database
-
-### Objectives
-
-- Create vector index
-- Store metadata
-- Implement similarity search
-
-### Deliverables
-
-- Working vector database
+                👤 Display to User
+```
 
 ---
 
-## Week 7 – Retrieval-Augmented Generation
+# 🎯 Project Goals
 
-### Objectives
+The primary objectives of this project were to:
 
-- Connect FAISS to Ollama
-- Build prompt generation
-- Retrieve supporting context
+✅ Learn Retrieval-Augmented Generation (RAG)
 
-### Deliverables
+✅ Build an AI application that runs entirely locally
 
-- Fully functioning RAG engine
+✅ Integrate a Large Language Model with cybersecurity documentation
 
----
+✅ Improve response accuracy through document retrieval
 
-## Week 8 – Streamlit Dashboard
+✅ Reduce AI hallucinations using trusted knowledge sources
 
-### Objectives
+✅ Design a modular and maintainable Python application
 
-- Design chat interface
-- Display AI responses
-- Show supporting sources
+✅ Create a beginner-friendly educational resource
 
-### Deliverables
-
-- Functional web interface
+✅ Demonstrate software engineering best practices
 
 ---
 
-## Week 9 – Feature Enhancements
+# 📚 What You'll Learn
 
-### Objectives
+Working through this repository will introduce you to:
 
-- Add response timing
-- Improve retrieval quality
-- Improve error handling
+### 🐍 Python Development
 
-### Deliverables
-
-- Enhanced user experience
-
----
-
-## Week 10 – Testing
-
-### Objectives
-
-- Develop regression tests
-- Validate retrieval pipeline
-- Verify AI responses
-
-### Deliverables
-
-- Stable application
+- Virtual environments
+- Package management
+- Project organization
+- Modular programming
+- Error handling
 
 ---
 
-## Week 11 – Logging
+### 🤖 Artificial Intelligence
 
-### Objectives
-
-- Implement automatic JSONL logging
-- Capture response metrics
-- Record application events
-
-### Deliverables
-
-- Persistent query history
+- Large Language Models
+- Prompt Engineering
+- Retrieval-Augmented Generation
+- Embeddings
+- Semantic Search
 
 ---
 
-## Week 12 – Documentation
+### 📚 Vector Databases
 
-### Objectives
-
-- Create user guide
-- Document installation
-- Explain architecture
-- Describe limitations
-
-### Deliverables
-
-- Complete technical documentation
+- FAISS
+- Document indexing
+- Similarity search
+- Vector embeddings
+- Chunk retrieval
 
 ---
 
-## Week 13 – Evaluation
+### 🛡️ Cybersecurity
 
-### Objectives
-
-- Build evaluation dataset
-- Test multiple cybersecurity questions
-- Measure retrieval performance
-
-### Deliverables
-
-- Evaluation report
+- Incident Response
+- Threat Intelligence
+- MITRE ATT&CK
+- NIST Framework
+- OWASP
+- Phishing Detection
+- Indicators of Compromise (IOCs)
 
 ---
 
-## Week 14 – Final Review
+### 💻 Software Engineering
 
-### Objectives
-
-- Final testing
-- README completion
-- Repository preparation
-- Presentation readiness
-
-### Deliverables
-
-- Completed capstone project
+- Git
+- GitHub
+- Streamlit
+- Testing with Pytest
+- Documentation
+- Debugging
+- Version Control
 
 ---
 
-# 🐞 Challenges Encountered
+# 🏆 Skills Demonstrated
 
-Software development rarely proceeds without obstacles. During development, several technical challenges were encountered and resolved.
+This project demonstrates practical experience with the following technologies and concepts.
 
----
+## Programming
 
-## Challenge: Python Environment Configuration
-
-### Problem
-
-Python packages were not available across different terminals.
-
-### Resolution
-
-A dedicated virtual environment was created and activated before installing project dependencies.
+- Python
+- Object-Oriented Programming
+- Modular Software Design
 
 ---
 
-## Challenge: Ollama Connectivity
+## Artificial Intelligence
 
-### Problem
-
-The application could not communicate with the local language model.
-
-### Resolution
-
-Verified that the Ollama service was installed, running, and accessible through the configured local endpoint.
+- Retrieval-Augmented Generation (RAG)
+- Local Large Language Models
+- Prompt Engineering
+- Embedding Generation
+- Semantic Search
 
 ---
 
-## Challenge: Embedding Downloads
+## Cybersecurity
 
-### Problem
-
-The embedding model required an initial download before embeddings could be generated.
-
-### Resolution
-
-Allowed the model to download once and reused the locally cached version for subsequent executions.
-
----
-
-## Challenge: FAISS Index Creation
-
-### Problem
-
-The application could not retrieve document vectors because the FAISS index had not yet been generated.
-
-### Resolution
-
-Successfully generated the vector index and associated metadata before launching the application.
+- Security Operations Center (SOC)
+- Incident Response
+- Threat Intelligence
+- Phishing Detection
+- MITRE ATT&CK
+- NIST Cybersecurity Framework
+- OWASP Security Principles
 
 ---
 
-## Challenge: Dependency Compatibility
+## Software Development
 
-### Problem
-
-Some Python packages produced warnings after installation.
-
-### Resolution
-
-Verified application functionality and ensured all required libraries were installed using compatible versions.
-
----
-
-## Challenge: Logging
-
-### Problem
-
-Application activity was initially not being recorded.
-
-### Resolution
-
-Implemented automatic JSONL logging for successful and failed requests, including timestamps, response times, retrieved sources, and status information.
+- Streamlit
+- FAISS
+- Git
+- GitHub
+- Pytest
+- Documentation
+- Debugging
+- Dependency Management
 
 ---
 
-# 🌱 Future Improvements
+# 🚀 Future Improvements
 
-Although the project successfully meets its objectives, there are many opportunities for future enhancements.
+This project establishes a strong foundation for future enhancements.
 
 Potential improvements include:
 
-- User authentication
-- Role-based access control
-- Multiple knowledge bases
-- Database-backed logging
-- Dashboard analytics
-- GPU acceleration
-- Docker deployment
-- Continuous Integration (CI)
-- Continuous Deployment (CD)
-- REST API
-- Automatic document ingestion
-- Scheduled index rebuilding
-- Support for multiple language models
-- Conversation memory
-- User feedback collection
-- Citation confidence scores
-- Administrative dashboard
-- Cloud deployment options
-
-These enhancements would further improve scalability, usability, and maintainability.
+- 🔍 Advanced threat hunting workflows
+- 🌐 Live threat intelligence integrations
+- 📊 Interactive security dashboards
+- ☁️ Cloud deployment options
+- 🔒 User authentication
+- 📁 Multi-user document libraries
+- 📈 Analytics and reporting
+- 🤖 Support for additional local language models
+- 📄 Expanded cybersecurity knowledge base
+- ⚡ Faster vector indexing
+- 🧠 Conversation memory
+- 🔄 Automated document synchronization
 
 ---
 
-# 📚 References
+# 🤝 Contributing
 
-The following resources were consulted throughout development.
+Contributions, suggestions, and constructive feedback are always welcome.
 
-## Python
+If you discover an issue or have an idea for improving the project:
 
-https://www.python.org/
-
----
-
-## Streamlit
-
-https://streamlit.io/
+1. Fork the repository
+2. Create a feature branch
+3. Commit your changes
+4. Open a Pull Request
 
 ---
 
-## Ollama
+# 🙏 Acknowledgments
 
-https://ollama.com/
+This project was made possible through the incredible work of the open-source community.
 
----
+Special thanks to:
 
-## FAISS
+- Python
+- Ollama
+- Streamlit
+- FAISS
+- Sentence Transformers
+- PyMuPDF
+- Hugging Face
+- Git
+- GitHub
 
-https://github.com/facebookresearch/faiss
-
----
-
-## Sentence Transformers
-
-https://www.sbert.net/
-
----
-
-## Hugging Face
-
-https://huggingface.co/
+for providing the tools and libraries used throughout this project.
 
 ---
 
-## PyTorch
+# 👨‍💻 Author
 
-https://pytorch.org/
+## Eric Sledge
 
----
+**AI • Cybersecurity • Software Development**
 
-## MITRE ATT&CK
+GitHub:
 
-https://attack.mitre.org/
-
----
-
-## NIST Cybersecurity Framework
-
-https://www.nist.gov/cyberframework
+https://github.com/ericsledge
 
 ---
 
-# 🙏 Acknowledgements
+# ⭐ If You Found This Project Helpful
 
-This project was completed as part of a university capstone experience and reflects the integration of software engineering, cybersecurity, artificial intelligence, and modern information retrieval techniques.
+If this repository helped you learn about:
 
-Special thanks to the developers and maintainers of the open-source technologies that made this project possible, including the communities behind Python, Streamlit, Ollama, FAISS, Sentence Transformers, Hugging Face, and PyTorch.
+- Artificial Intelligence
+- Cybersecurity
+- Retrieval-Augmented Generation (RAG)
+- Python Development
+- Streamlit
+- FAISS
+- Ollama
 
----
+please consider giving the repository a ⭐ on GitHub.
 
-# 📋 Final Project Checklist
-
-Before presenting or submitting the project, verify the following items:
-
-## Application
-
-- [x] Streamlit dashboard launches successfully
-- [x] Ollama is running
-- [x] AI responses generate correctly
-- [x] Sources are displayed
-- [x] Retrieved context is available
-- [x] Response timing is shown
-- [x] JSONL logging is functioning
+It helps others discover the project and supports continued development.
 
 ---
 
-## Backend
+<div align="center">
 
-- [x] Knowledge base loads correctly
-- [x] Embeddings generate successfully
-- [x] FAISS index loads correctly
-- [x] Metadata matches vector index
-- [x] RAG engine retrieves relevant context
+## 🎉 Thank You for Visiting!
 
----
+### Happy Learning, Happy Coding, and Stay Curious! 🚀
 
-## Documentation
-
-- [x] README completed
-- [x] Architecture documentation completed
-- [x] Installation guide completed
-- [x] User guide completed
-- [x] Testing documentation completed
-- [x] Limitations documented
+</div>
 
 ---
 
-## Testing
+# ❓ Frequently Asked Questions (FAQ)
 
-- [x] Regression tests pass
-- [x] Evaluation dataset created
-- [x] Manual testing completed
-- [x] Logging verified
+### 🔹 Do I need an OpenAI API key?
+
+**No.**
+
+This project runs entirely on your local machine using **Ollama**, so no paid AI subscription or API key is required.
 
 ---
 
-# 🎓 Skills Demonstrated
+### 🔹 Can this project run offline?
 
-Completing this project demonstrates practical experience with:
+**Yes.**
 
-- Python Programming
+Once Python, Ollama, the required model, and project dependencies are installed, the application can run without an internet connection.
+
+---
+
+### 🔹 Is this project beginner friendly?
+
+**Absolutely.**
+
+This repository is designed for learners.
+
+The documentation assumes little to no experience with:
+
+- Python
+- Git
+- GitHub
 - Artificial Intelligence
 - Retrieval-Augmented Generation (RAG)
-- Local Large Language Models
-- Semantic Search
-- Vector Databases
-- FAISS
 - Streamlit
+- FAISS
+- Ollama
+
+The accompanying documentation guides readers through every stage of building, testing, and deploying the application.
+
+---
+
+### 🔹 Can I expand this project?
+
+Yes.
+
+The modular architecture makes it straightforward to add new capabilities, such as:
+
+- Additional cybersecurity frameworks
+- New document collections
+- Different local language models
+- Cloud deployment
+- Authentication
+- Threat intelligence APIs
+- SIEM integrations
+- Memory and conversation history
+
+---
+
+### 🔹 Why use Ollama instead of cloud AI services?
+
+Using a local language model provides several advantages.
+
+| Local AI (Ollama) | Cloud AI |
+|-------------------|----------|
+| 🔒 Greater privacy | Data sent externally |
+| 💲 No API costs | Usage-based pricing |
+| 📶 Can run offline | Internet required |
+| ⚙️ Full local control | Provider-managed |
+| 🛡 Suitable for sensitive learning environments | Depends on provider policies |
+
+---
+
+# 📚 Why Retrieval-Augmented Generation (RAG)?
+
+Traditional Large Language Models generate responses using the knowledge they were trained on.
+
+Retrieval-Augmented Generation improves this process by searching a trusted knowledge base before generating an answer.
+
+This project follows that workflow to provide responses that are more accurate, transparent, and grounded in documentation.
+
+| Traditional LLM | Retrieval-Augmented Generation (RAG) |
+|-----------------|--------------------------------------|
+| Answers from model knowledge | Searches trusted documents first |
+| May produce unsupported claims | Grounds responses in retrieved context |
+| Limited transparency | Can reference supporting sources |
+| General-purpose responses | Tailored to your cybersecurity knowledge base |
+
+---
+
+# 🎯 Project Highlights
+
+This project demonstrates practical experience across multiple disciplines.
+
+### 🤖 Artificial Intelligence
+
+- Local Large Language Models
+- Retrieval-Augmented Generation (RAG)
 - Prompt Engineering
-- Software Architecture
-- Software Testing
-- Logging and Monitoring
-- Technical Documentation
-- Problem Solving
-- Cybersecurity Knowledge Management
-
-These skills are directly applicable to roles involving cybersecurity, AI development, software engineering, machine learning, and data engineering.
+- Embedding Generation
+- Semantic Search
 
 ---
 
-# 🏁 Conclusion
+### 🛡 Cybersecurity
 
-The AI SOC Analyst Assistant demonstrates how Retrieval-Augmented Generation (RAG) can improve the accuracy and usefulness of AI-powered cybersecurity assistants by combining semantic search with a locally hosted Large Language Model.
-
-Throughout this capstone project, a complete end-to-end application was designed and implemented using Python, Streamlit, Ollama, FAISS, and Sentence Transformers. The project includes document processing, vector embedding generation, semantic retrieval, AI-assisted response generation, automated logging, testing, and comprehensive documentation.
-
-By operating entirely on local resources, the application provides a privacy-conscious alternative to cloud-based AI services while remaining flexible enough to support future enhancements. The modular architecture allows additional features, new knowledge sources, and alternative language models to be integrated with minimal changes to the existing codebase.
-
-This project represents the successful application of software engineering principles, artificial intelligence techniques, and cybersecurity knowledge to solve a practical information retrieval problem. It also demonstrates proficiency in system design, technical documentation, testing, and iterative development, providing a strong foundation for future work in AI-assisted cybersecurity solutions.
-
----
-
-# 📬 Contact
-
-Author: Eric Sledge
-
-Course: Cybersecurity Masters Capstone Project
-
-Institution: Claflin University
-
-**GitHub:** *(Add your repository URL after publishing)*
-
-Version: 1.0
+- Security Operations Center (SOC) concepts
+- Incident Response
+- Threat Intelligence
+- Phishing Analysis
+- MITRE ATT&CK
+- NIST Cybersecurity Framework
+- OWASP Security Guidance
 
 ---
 
-**Thank you for taking the time to review this project. Feedback and suggestions for future improvements are always welcome.**
+### 💻 Software Engineering
+
+- Python application development
+- Modular software architecture
+- Streamlit web applications
+- Automated testing with Pytest
+- Version control using Git
+- GitHub repository management
+- Technical documentation
+
+---
+
+# 🌱 Why This Repository Exists
+
+This repository was created to demonstrate how modern Artificial Intelligence can be combined with trusted cybersecurity documentation to build practical tools that support learning and analysis.
+
+Rather than sharing only the finished source code, the goal is to provide a complete educational resource that explains how the project is organized, how each component works, and how the entire application can be recreated from scratch.
+
+Whether you're exploring AI, cybersecurity, or software engineering, this project is intended to help you understand both the concepts and the implementation.
+
+---
+
+# 📖 Continue Learning
+
+The documentation included with this repository is organized into four beginner-friendly guides.
+
+| Guide | Description |
+|--------|-------------|
+| 📘 Part A | Install and Run the Finished Project |
+| 📘 Part B | Build the Entire Project from Scratch |
+| 📘 Part C | Testing and Validation |
+| 📘 Part D | GitHub Deployment, Troubleshooting, and Final Submission |
+
+Each guide builds upon the previous one and is designed to help readers confidently recreate the project step by step.
+
+---
+
+# 📄 License
+
+This repository is provided for educational and portfolio purposes.
+
+You are welcome to study the code, learn from the implementation, and adapt ideas for your own educational projects. If you plan to redistribute or substantially reuse the project, please review the repository's license terms.
+
+---
+
+# 👨‍💻 Author
+
+## Eric Sledge
+
+**AI • Cybersecurity • Python Development**
+
+### Connect with me
+
+- GitHub: https://github.com/ericsledge
+
+---
+
+<div align="center">
+
+# ⭐ Thank You for Visiting!
+
+Thank you for taking the time to explore this project.
+
+I hope this repository helps you better understand Artificial Intelligence, Retrieval-Augmented Generation (RAG), cybersecurity workflows, and modern Python application development.
+
+If you found this project helpful or interesting, consider giving the repository a ⭐ on GitHub.
+
+Your support helps others discover the project and encourages continued learning and development.
+
+---
+
+### 🚀 Keep Learning • Keep Building • Keep Exploring
+
+**Happy Coding!**
+
+</div>
