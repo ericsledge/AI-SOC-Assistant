@@ -4,9 +4,9 @@
 >
 > **Course:** Capstone Project
 >
-> **Author:** *Your Name*
+> **Author:** Eric Sledge
 >
-> **Institution:** *Your College*
+> **Institution:** Claflin University
 >
 > **Project Type:** Retrieval-Augmented Generation (RAG) AI Assistant
 >
