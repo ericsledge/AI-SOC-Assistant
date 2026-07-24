@@ -1,0 +1,10 @@
+From: Payroll Department <payroll@company-payment.example>
+Subject: Direct deposit account disabled
+
+Your direct deposit account has been disabled.
+
+Open the link below and confirm your employee username and password:
+
+http://company-payment.example/payroll-login
+
+You must complete verification within one hour.

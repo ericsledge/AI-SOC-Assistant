@@ -1,0 +1,18 @@
+From: Microsoft Security <security@micros0ft-account-support.xyz>
+To: employee@example.com
+Subject: URGENT: Your account will be permanently suspended
+
+Dear User,
+
+We detected unusual activity on your account.
+
+Your account will be permanently suspended within 24 hours unless you
+verify your account immediately.
+
+Enter your username and password using the following link:
+
+http://185.199.110.153/account/verify
+
+Failure to respond will result in account deletion.
+
+Microsoft Security

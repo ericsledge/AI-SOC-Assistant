@@ -1,0 +1,122 @@
+[
+  {
+    "id": "SOC-001",
+    "category": "Phishing",
+    "question": "What is phishing?",
+    "expected_keywords": [
+      "email",
+      "social engineering",
+      "credentials",
+      "malicious",
+      "attack"
+    ]
+  },
+  {
+    "id": "SOC-002",
+    "category": "Phishing",
+    "question": "How can users identify a phishing email?",
+    "expected_keywords": [
+      "sender",
+      "links",
+      "attachments",
+      "domain",
+      "urgent"
+    ]
+  },
+  {
+    "id": "SOC-003",
+    "category": "Incident Response",
+    "question": "What are the phases of the NIST Incident Response Lifecycle?",
+    "expected_keywords": [
+      "preparation",
+      "detection",
+      "containment",
+      "eradication",
+      "recovery"
+    ]
+  },
+  {
+    "id": "SOC-004",
+    "category": "Incident Response",
+    "question": "What should a SOC analyst do after detecting ransomware?",
+    "expected_keywords": [
+      "containment",
+      "isolate",
+      "investigation",
+      "recovery",
+      "eradication"
+    ]
+  },
+  {
+    "id": "SOC-005",
+    "category": "MITRE ATT&CK",
+    "question": "What is the MITRE ATT&CK framework?",
+    "expected_keywords": [
+      "tactics",
+      "techniques",
+      "adversary",
+      "matrix",
+      "knowledge base"
+    ]
+  },
+  {
+    "id": "SOC-006",
+    "category": "Windows Security",
+    "question": "What do repeated failed Windows login attempts indicate?",
+    "expected_keywords": [
+      "brute force",
+      "authentication",
+      "account",
+      "attack",
+      "login"
+    ]
+  },
+  {
+    "id": "SOC-007",
+    "category": "Malware",
+    "question": "What is ransomware?",
+    "expected_keywords": [
+      "encryption",
+      "files",
+      "payment",
+      "malware",
+      "ransom"
+    ]
+  },
+  {
+    "id": "SOC-008",
+    "category": "OWASP",
+    "question": "What is SQL Injection?",
+    "expected_keywords": [
+      "database",
+      "query",
+      "input",
+      "SQL",
+      "attack"
+    ]
+  },
+  {
+    "id": "SOC-009",
+    "category": "OWASP",
+    "question": "What is Cross-Site Scripting (XSS)?",
+    "expected_keywords": [
+      "browser",
+      "JavaScript",
+      "script",
+      "input",
+      "attack"
+    ]
+  },
+  {
+    "id": "SOC-010",
+    "category": "Authentication",
+    "question": "Why is multi-factor authentication important?",
+    "expected_keywords": [
+      "authentication",
+      "verification",
+      "factor",
+      "security",
+      "identity"
+    ]
+  }
+]

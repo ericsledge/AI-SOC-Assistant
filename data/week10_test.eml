@@ -1,0 +1,16 @@
+From: Payroll Department <payroll@company-payments.xyz>
+To: employee@example.com
+Reply-To: verification@external-login.click
+Subject: Urgent direct deposit verification required
+Date: Sun, 19 Jul 2026 10:00:00 -0400
+Message-ID: <123456@example.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+
+Your direct deposit account has been disabled.
+
+Verify your account immediately using the link below:
+
+http://198.51.100.25/payroll/login
+
+Enter your username and password within one hour.

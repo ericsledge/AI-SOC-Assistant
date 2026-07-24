@@ -1,0 +1,7 @@
+From: administrator@example.com
+To: employee@example.com
+Subject: Internal system notice
+
+Review the system at:
+
+http://192.168.1.50/login

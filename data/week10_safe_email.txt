@@ -1,0 +1,12 @@
+From: Professor Taylor <taylor@university.edu>
+To: student@university.edu
+Subject: Class schedule reminder
+
+Hello,
+
+Tomorrow's class begins at 10:00 AM in Room 204.
+
+Please read Chapter 8 before class. No response is required.
+
+Thank you,
+Professor Taylor
