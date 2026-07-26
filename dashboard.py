@@ -1,4 +1,4 @@
-"""Streamlit dashboard for the AI SOC Analyst Assistant."""
+﻿"""Streamlit dashboard for the AI SOC Analyst Assistant."""
 
 from __future__ import annotations
 
@@ -39,7 +39,7 @@ def configure_page() -> None:
 
     st.set_page_config(
         page_title="AI SOC Analyst Assistant",
-        page_icon="🛡️",
+        page_icon="ðŸ›¡ï¸",
         layout="wide",
         initial_sidebar_state="expanded",
     )
