@@ -22,11 +22,13 @@ This guide assumes **no previous software development experience**.
 
 Everything is explained one step at a time.
 
+Throughout this guide, you'll first build the Retrieval-Augmented Generation (RAG) assistant before extending the application with a local phishing email analysis workflow. Both features will ultimately be combined into a single Streamlit application.
+
 ---
 
 # 🎯 What You'll Build
 
-Over the next several chapters, you'll create a complete Retrieval-Augmented Generation (RAG) application capable of:
+Over the next several chapters, you'll create an offline AI-powered cybersecurity platform capable of:
 
 🤖 Running a local Large Language Model
 
@@ -36,11 +38,15 @@ Over the next several chapters, you'll create a complete Retrieval-Augmented Gen
 
 🧠 Generating context-aware responses
 
+🎣 Performing phishing email triage
+
 🛡️ Assisting Security Operations Center (SOC) analysts
 
 📄 Displaying supporting source citations
 
 💻 Running through a modern Streamlit web interface
+
+🌐 Operating locally without cloud AI APIs after installation
 
 When finished, your project will closely resemble the completed application shown in the README.
 
@@ -397,22 +403,20 @@ The completed project contains several major components.
 Each one performs a specific job.
 
 ```text
-                    User
-                      │
-                      ▼
-          Streamlit Web Interface
-                      │
-                      ▼
-               RAG Processing Engine
-             ┌──────────┴──────────┐
-             ▼                     ▼
-      FAISS Vector Search     Ollama LLM
-             │                     │
-             ▼                     ▼
- Cybersecurity Documents     AI Response
-             └──────────┬──────────┘
-                        ▼
-               Final Answer + Sources
+                     User
+                       │
+                       ▼
+              Streamlit Web Interface
+                       │
+          ┌────────────┴────────────┐
+          ▼                         ▼
+Cybersecurity Assistant      Phishing Triage
+          │                         │
+          ▼                         ▼
+      RAG Engine           Email Analysis
+          │                         │
+          ▼                         ▼
+FAISS + Ollama              Structured Findings
 ```
 
 Every question follows this path.
@@ -461,10 +465,15 @@ The knowledge base contains trusted cybersecurity documents.
 Examples include:
 
 - MITRE ATT&CK
+- MITRE ATLAS
+- MITRE D3FEND
 - NIST Cybersecurity Framework
-- OWASP guidance
-- Incident response playbooks
-- Password security recommendations
+- OWASP
+- CISA Phishing Guidance
+- Log4Shell Documentation
+- High-Impact CVEs
+- Incident Response Playbooks
+- Password Security Recommendations
 
 These documents become the source of truth for the AI assistant.
 
